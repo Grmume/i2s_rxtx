@@ -702,10 +702,10 @@ F 3 "" H 6150 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0111
 U 1 1 5D0BFC09
 P 1050 2950
-F 0 "#PWR?" H 1050 2700 50  0001 C CNN
+F 0 "#PWR0111" H 1050 2700 50  0001 C CNN
 F 1 "GND" H 1055 2777 50  0000 C CNN
 F 2 "" H 1050 2950 50  0001 C CNN
 F 3 "" H 1050 2950 50  0001 C CNN
@@ -715,45 +715,45 @@ $EndComp
 Wire Wire Line
 	1050 2850 1050 2950
 $Comp
-L agg:R R?
+L agg:R R5
 U 1 1 5D069D45
 P 3500 2450
-F 0 "R?" V 3504 2494 50  0000 L CNN
+F 0 "R5" V 3504 2494 50  0000 L CNN
 F 1 "500K" V 3595 2494 50  0000 L CNN
-F 2 "" H 3500 2450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3500 2450 50  0001 C CNN
 F 3 "" H 3500 2450 50  0001 C CNN
 	1    3500 2450
 	0    1    1    0   
 $EndComp
 $Comp
-L agg:R R?
+L agg:R R6
 U 1 1 5D06AB9A
 P 3600 2250
-F 0 "R?" V 3604 2294 50  0000 L CNN
+F 0 "R6" V 3604 2294 50  0000 L CNN
 F 1 "500K" V 3695 2294 50  0000 L CNN
-F 2 "" H 3600 2250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 2250 50  0001 C CNN
 F 3 "" H 3600 2250 50  0001 C CNN
 	1    3600 2250
 	0    1    1    0   
 $EndComp
 $Comp
-L agg:R R?
+L agg:R R7
 U 1 1 5D06B197
 P 3700 2050
-F 0 "R?" V 3704 2094 50  0000 L CNN
+F 0 "R7" V 3704 2094 50  0000 L CNN
 F 1 "500K" V 3795 2094 50  0000 L CNN
-F 2 "" H 3700 2050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 2050 50  0001 C CNN
 F 3 "" H 3700 2050 50  0001 C CNN
 	1    3700 2050
 	0    1    1    0   
 $EndComp
 $Comp
-L agg:R R?
+L agg:R R8
 U 1 1 5D06B744
 P 3800 1850
-F 0 "R?" V 3804 1894 50  0000 L CNN
+F 0 "R8" V 3804 1894 50  0000 L CNN
 F 1 "500K" V 3895 1894 50  0000 L CNN
-F 2 "" H 3800 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3800 1850 50  0001 C CNN
 F 3 "" H 3800 1850 50  0001 C CNN
 	1    3800 1850
 	0    1    1    0   
@@ -767,10 +767,10 @@ Wire Wire Line
 	3600 2600 3500 2600
 Connection ~ 3600 2600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 5D0A366B
 P 3600 2700
-F 0 "#PWR?" H 3600 2450 50  0001 C CNN
+F 0 "#PWR0112" H 3600 2450 50  0001 C CNN
 F 1 "GND" H 3605 2527 50  0000 C CNN
 F 2 "" H 3600 2700 50  0001 C CNN
 F 3 "" H 3600 2700 50  0001 C CNN
@@ -815,4 +815,48 @@ Wire Wire Line
 	3700 2600 3800 2600
 Wire Wire Line
 	3800 1950 3800 2600
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D0E85FD
+P 850 3500
+F 0 "H1" H 950 3546 50  0000 L CNN
+F 1 "MountingHole" H 950 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 3500 50  0001 C CNN
+F 3 "~" H 850 3500 50  0001 C CNN
+	1    850  3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D0E907F
+P 850 3700
+F 0 "H2" H 950 3746 50  0000 L CNN
+F 1 "MountingHole" H 950 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 3700 50  0001 C CNN
+F 3 "~" H 850 3700 50  0001 C CNN
+	1    850  3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D0E92F0
+P 850 3900
+F 0 "H3" H 950 3946 50  0000 L CNN
+F 1 "MountingHole" H 950 3855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 3900 50  0001 C CNN
+F 3 "~" H 850 3900 50  0001 C CNN
+	1    850  3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D0E9AAA
+P 850 4100
+F 0 "H4" H 950 4146 50  0000 L CNN
+F 1 "MountingHole" H 950 4055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 4100 50  0001 C CNN
+F 3 "~" H 850 4100 50  0001 C CNN
+	1    850  4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
