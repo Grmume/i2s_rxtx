@@ -505,13 +505,13 @@ Wire Wire Line
 Wire Wire Line
 	5050 2550 5150 2550
 Text GLabel 5100 2450 0    50   Input ~ 0
-I2S_WS
+I2S_WS_3V3
 Text GLabel 5100 2350 0    50   Input ~ 0
-I2S_CLK
+I2S_CLK_3V3
 Text GLabel 5100 2250 0    50   Input ~ 0
-I2S_CH12
+I2S_CH12_3V3
 Text GLabel 5100 2150 0    50   Input ~ 0
-I2S_CH34
+I2S_CH34_3V3
 Wire Wire Line
 	6200 1900 6200 1950
 Connection ~ 6200 1900
@@ -717,104 +717,14 @@ Wire Wire Line
 $Comp
 L agg:R R5
 U 1 1 5D069D45
-P 3500 2450
-F 0 "R5" V 3504 2494 50  0000 L CNN
-F 1 "500K" V 3595 2494 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3500 2450 50  0001 C CNN
-F 3 "" H 3500 2450 50  0001 C CNN
-	1    3500 2450
+P 6500 700
+F 0 "R5" V 6504 744 50  0000 L CNN
+F 1 "2K2" V 6595 744 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6500 700 50  0001 C CNN
+F 3 "" H 6500 700 50  0001 C CNN
+	1    6500 700 
 	0    1    1    0   
 $EndComp
-$Comp
-L agg:R R6
-U 1 1 5D06AB9A
-P 3600 2250
-F 0 "R6" V 3604 2294 50  0000 L CNN
-F 1 "500K" V 3695 2294 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 2250 50  0001 C CNN
-F 3 "" H 3600 2250 50  0001 C CNN
-	1    3600 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L agg:R R7
-U 1 1 5D06B197
-P 3700 2050
-F 0 "R7" V 3704 2094 50  0000 L CNN
-F 1 "500K" V 3795 2094 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 2050 50  0001 C CNN
-F 3 "" H 3700 2050 50  0001 C CNN
-	1    3700 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L agg:R R8
-U 1 1 5D06B744
-P 3800 1850
-F 0 "R8" V 3804 1894 50  0000 L CNN
-F 1 "500K" V 3895 1894 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3800 1850 50  0001 C CNN
-F 3 "" H 3800 1850 50  0001 C CNN
-	1    3800 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3450 1800 3800 1800
-Wire Wire Line
-	3800 1800 3950 1800
-Connection ~ 3800 1800
-Wire Wire Line
-	3600 2600 3500 2600
-Connection ~ 3600 2600
-$Comp
-L power:GND #PWR0112
-U 1 1 5D0A366B
-P 3600 2700
-F 0 "#PWR0112" H 3600 2450 50  0001 C CNN
-F 1 "GND" H 3605 2527 50  0000 C CNN
-F 2 "" H 3600 2700 50  0001 C CNN
-F 3 "" H 3600 2700 50  0001 C CNN
-	1    3600 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 2600 3600 2700
-Wire Wire Line
-	3600 2600 3700 2600
-Wire Wire Line
-	3800 1800 3800 1850
-Wire Wire Line
-	3450 2400 3500 2400
-Wire Wire Line
-	3450 2000 3700 2000
-Wire Wire Line
-	3450 2200 3600 2200
-Wire Wire Line
-	3700 2000 3700 2050
-Connection ~ 3700 2000
-Wire Wire Line
-	3700 2000 3950 2000
-Wire Wire Line
-	3600 2200 3600 2250
-Connection ~ 3600 2200
-Wire Wire Line
-	3600 2200 3950 2200
-Wire Wire Line
-	3500 2400 3500 2450
-Connection ~ 3500 2400
-Wire Wire Line
-	3500 2400 3950 2400
-Wire Wire Line
-	3500 2550 3500 2600
-Wire Wire Line
-	3600 2350 3600 2600
-Wire Wire Line
-	3700 2150 3700 2600
-Connection ~ 3700 2600
-Wire Wire Line
-	3700 2600 3800 2600
-Wire Wire Line
-	3800 1950 3800 2600
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5D0E85FD
@@ -859,4 +769,193 @@ F 3 "~" H 850 4100 50  0001 C CNN
 	1    850  4100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3450 2400 3950 2400
+Wire Wire Line
+	3450 2200 3950 2200
+Wire Wire Line
+	3450 2000 3950 2000
+Wire Wire Line
+	3450 1800 3950 1800
+Text GLabel 6350 700  0    50   Input ~ 0
+I2S_WS
+$Comp
+L agg:R R?
+U 1 1 5D540B22
+P 6500 900
+F 0 "R?" V 6504 944 50  0000 L CNN
+F 1 "3K9" V 6595 944 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6500 900 50  0001 C CNN
+F 3 "" H 6500 900 50  0001 C CNN
+	1    6500 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D54109E
+P 6500 1050
+F 0 "#PWR?" H 6500 800 50  0001 C CNN
+F 1 "GND" H 6505 877 50  0000 C CNN
+F 2 "" H 6500 1050 50  0001 C CNN
+F 3 "" H 6500 1050 50  0001 C CNN
+	1    6500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 700  6500 700 
+Wire Wire Line
+	6500 800  6500 850 
+Text GLabel 6800 850  2    50   Input ~ 0
+I2S_WS_3V3
+Wire Wire Line
+	6800 850  6500 850 
+Wire Wire Line
+	6500 1000 6500 1050
+Wire Wire Line
+	6500 900  6500 850 
+Connection ~ 6500 850 
+$Comp
+L agg:R R?
+U 1 1 5D56E9E4
+P 3650 800
+F 0 "R?" V 3654 844 50  0000 L CNN
+F 1 "2K2" V 3745 844 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 800 50  0001 C CNN
+F 3 "" H 3650 800 50  0001 C CNN
+	1    3650 800 
+	0    1    1    0   
+$EndComp
+Text GLabel 3500 800  0    50   Input ~ 0
+I2S_CLK
+$Comp
+L agg:R R?
+U 1 1 5D56E9EF
+P 3650 1000
+F 0 "R?" V 3654 1044 50  0000 L CNN
+F 1 "3K9" V 3745 1044 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 1000 50  0001 C CNN
+F 3 "" H 3650 1000 50  0001 C CNN
+	1    3650 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D56E9F9
+P 3650 1150
+F 0 "#PWR?" H 3650 900 50  0001 C CNN
+F 1 "GND" H 3655 977 50  0000 C CNN
+F 2 "" H 3650 1150 50  0001 C CNN
+F 3 "" H 3650 1150 50  0001 C CNN
+	1    3650 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 800  3650 800 
+Wire Wire Line
+	3650 900  3650 950 
+Text GLabel 3950 950  2    50   Input ~ 0
+I2S_CLK_3V3
+Wire Wire Line
+	3950 950  3650 950 
+Wire Wire Line
+	3650 1100 3650 1150
+Wire Wire Line
+	3650 1000 3650 950 
+Connection ~ 3650 950 
+$Comp
+L agg:R R?
+U 1 1 5D5754C4
+P 4550 750
+F 0 "R?" V 4554 794 50  0000 L CNN
+F 1 "2K2" V 4645 794 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4550 750 50  0001 C CNN
+F 3 "" H 4550 750 50  0001 C CNN
+	1    4550 750 
+	0    1    1    0   
+$EndComp
+Text GLabel 4400 750  0    50   Input ~ 0
+I2S_CH12
+$Comp
+L agg:R R?
+U 1 1 5D5754CF
+P 4550 950
+F 0 "R?" V 4554 994 50  0000 L CNN
+F 1 "3K9" V 4645 994 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4550 950 50  0001 C CNN
+F 3 "" H 4550 950 50  0001 C CNN
+	1    4550 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5754D9
+P 4550 1100
+F 0 "#PWR?" H 4550 850 50  0001 C CNN
+F 1 "GND" H 4555 927 50  0000 C CNN
+F 2 "" H 4550 1100 50  0001 C CNN
+F 3 "" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 750  4550 750 
+Wire Wire Line
+	4550 850  4550 900 
+Text GLabel 4850 900  2    50   Input ~ 0
+I2S_CH12_3V3
+Wire Wire Line
+	4850 900  4550 900 
+Wire Wire Line
+	4550 1050 4550 1100
+Wire Wire Line
+	4550 950  4550 900 
+Connection ~ 4550 900 
+$Comp
+L agg:R R?
+U 1 1 5D57D61F
+P 5500 700
+F 0 "R?" V 5504 744 50  0000 L CNN
+F 1 "2K2" V 5595 744 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5500 700 50  0001 C CNN
+F 3 "" H 5500 700 50  0001 C CNN
+	1    5500 700 
+	0    1    1    0   
+$EndComp
+Text GLabel 5350 700  0    50   Input ~ 0
+I2S_CH34
+$Comp
+L agg:R R?
+U 1 1 5D57D62A
+P 5500 900
+F 0 "R?" V 5504 944 50  0000 L CNN
+F 1 "3K9" V 5595 944 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5500 900 50  0001 C CNN
+F 3 "" H 5500 900 50  0001 C CNN
+	1    5500 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D57D634
+P 5500 1050
+F 0 "#PWR?" H 5500 800 50  0001 C CNN
+F 1 "GND" H 5505 877 50  0000 C CNN
+F 2 "" H 5500 1050 50  0001 C CNN
+F 3 "" H 5500 1050 50  0001 C CNN
+	1    5500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 700  5500 700 
+Wire Wire Line
+	5500 800  5500 850 
+Text GLabel 5800 850  2    50   Input ~ 0
+I2S_CH34_3V3
+Wire Wire Line
+	5800 850  5500 850 
+Wire Wire Line
+	5500 1000 5500 1050
+Wire Wire Line
+	5500 900  5500 850 
+Connection ~ 5500 850 
 $EndSCHEMATC
