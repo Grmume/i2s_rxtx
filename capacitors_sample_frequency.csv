@@ -1,0 +1,8 @@
+Required capactor depending on frequency;;;;R Cable;;;;
+;;;;;;;;
+Data rate;Capacity;CutOff F;;Sample Frequency;Bit Clock;Bit/Data C;Word clock;WS C
+[kBaud];[pF];[;;[kHz];[kHz];[pF];[kHz];[pF]
+250;100;;;44,1;2822;-;44,09375;100
+500;50;;;48;3072;-;48;100
+1000;25;;;88,2;5644,8;-;88,2;100
+2000;12,5;;;96;6144;-;96;100
